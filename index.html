@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<!-- هذا السطر يحدد نوع المستند بأنه HTML5 -->
+
+<html lang="en">
+<!-- وسم html هو الجذر لكل صفحة ويب، و lang يحدد لغة الصفحة -->
+
+<head>
+  <!-- يحتوي على بيانات تعريفية (Meta Data) لا تظهر مباشرة للمستخدم -->
+
+  <meta charset="UTF-8" />
+  <!-- يحدد ترميز الأحرف (UTF-8) لدعم جميع اللغات بما فيها العربية -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- يجعل الصفحة متجاوبة مع مختلف الأجهزة (موبايل/كمبيوتر) -->
+
+  <!-- استدعاء خط من Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- استدعاء مكتبة أيقونات Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- ربط ملف CSS خارجي لتنسيق الصفحة -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- أيقونة الموقع التي تظهر في التبويب -->
+  <link rel="icon" type="image/jpg" href="images/site_logo.jpg" />
+
+  <title>ورتّـل</title>
+  <!-- عنوان الصفحة الذي يظهر في شريط المتصفح -->
+</head>
+
+<body class="">
+  <!-- جسم الصفحة: يحتوي على كل ما يظهر للمستخدم -->
+
+  <div class="scroll-up">
+    <!-- زر للعودة إلى أعلى الصفحة -->
+    <i class="ri-arrow-up-double-fill"></i>
+    <!-- أيقونة سهم للأعلى -->
+  </div>
+
+  <header>
+    <!-- رأس الصفحة: يحتوي على الشعار والقائمة -->
+    <div class="container">
+      <a href="index.html" class="logo">ورتّـل</a>
+      <!-- شعار الموقع كرابط للصفحة الرئيسية -->
+
+      <ul>
+        <!-- قائمة تنقل -->
+        <li><a href="#main" class="active">الصفحة الرئيسية</a></li>
+        <li><a href="#hadith">أحاديث</a></li>
+        <li><a href="#lectures">محاضرات</a></li>
+        <li><a href="#quran">القرآن الكريم</a></li>
+        <li><a href="#adhan">أوقات الصلاة</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+
+      <div class="toggle">
+        <!-- زر لتغيير الوضع (ليلي/نهاري) -->
+        <i class="ri-moon-fill"></i>
+      </div>
+
+      <div class="menu">
+        <!-- زر القائمة للأجهزة الصغيرة -->
+        <i class="ri-menu-line"></i>
+      </div>
+    </div>
+  </header>
+<main>
+    <!-- القسم الرئيسي للمحتوى -->
+
+    <section class="main" id="main">
+      <!-- قسم البداية (الصفحة الرئيسية) -->
+      <div class="overlay"></div>
+      <!-- طبقة شفافة للتأثير البصري -->
+      <div class="container">
+        <div class="text">
+          <h1>
+            مرحبا بكم في <br />
+            موقع وَرتّـل
+          </h1>
+          <a href="#hadith"><button>ابدأ التصفح <i class="ri-arrow-left-line"></i></button></a>
+          <!-- زر للانتقال إلى قسم الأحاديث -->
+        </div>
+      </div>
+    </section>
+   <section class="hadith" id="hadith">
+      <!-- قسم الأحاديث -->
+      <h2>بعض الأحاديث من صحيح مسلم</h2>
+      <div class="container">
+        <div class="hadith-container">
+          <!-- مكان عرض الحديث -->
+          <span class="number"><span class="current"></span>/300</span>
+          <!-- عداد الأحاديث -->
+          <p></p>
+        </div>
+        <div class="btns">
+          <!-- أزرار التنقل بين الأحاديث -->
+          <button class="next">التالي</button>
+          <button class="prev">السابق</button>
+        </div>
+      </div>
+    </section>
+    <section class="lectures" id="lectures">
+      <h2>أهم المحاضرات الدينية</h2>
+      <div class="container">
+        <div class="left">
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/3Y9fwYvN6Rs"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+        <div class="right">
+          <div class="box" data-source="https://www.youtube.com/embed/3Y9fwYvN6Rs">
+            <div class="text">
+              <h3>تعلم أحكام التجويد</h3>
+              <p>الشيخ فارس عنتر</p>
+            </div>
+            <div class="img">
+              <img src="images/fares.jpg" alt="img" loading="lazy" />
+            </div>
+          </div>
+          <div class="box" data-source="https://www.youtube.com/embed/LxXcznxw8TQ">
+            <div class="text">
+              <h3>علاج التوتر و القلق و ماذا تحتاج لتستقر حياتك و نفسيتك</h3>
+              <p>الشيخ أمجد سمير</p>
+            </div>
+            <div class="img">
+              <img src="images/profile.jpg" alt="img" loading="lazy" />
+            </div>
+          </div>
+          <div class="box" data-source="https://www.youtube.com/embed/_Rhfup6NSY0">
+            <div class="text">
+              <h3>
+                سر الخشوع في الصلاة ! تعلم كيف تخشع في صلاتك لتنضبط حياتك
+              </h3>
+              <p>الشيخ أمجد سمير</p>
+            </div>
+            <div class="img">
+              <img src="images/profile.jpg" alt="img" loading="lazy" />
+            </div>
+          </div>
+          <div class="box" data-source="https://www.youtube.com/embed/jPa-bDYq7Dk">
+            <div class="text">
+              <h3>ارضى بما قسم الله لك</h3>
+              <p>الشيخ فتحي الصافي</p>
+            </div>
+            <div class="img">
+              <img src="images/fathi.jpg" alt="img" loading="lazy" />
+            </div>
+          </div>
+          <div class="box" data-source="https://www.youtube.com/embed/rMsup96W9WE">
+            <div class="text">
+              <h3>لا تكن فارغاً ولا تضيع وقت في التفاهات</h3>
+              <p>الشيخ أمجد سمير</p>
+            </div>
+            <div class="img">
+              <img src="images/profile.jpg" alt="img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quran" id="quran">
+      <h2>القرآن الكريم</h2>
+      <input type="text" id="input" placeholder="ابحث عن السورة" />
+      <div class="container"></div>
+      <div id="overlay">
+        <div class="spinner"></div>
+      </div>
+      <audio id="audioPlayer" controls></audio>
+    </section>
+    <section class="adhan" id="adhan">
+      <h2>أوقات الصلاة في مدينة حلب</h2>
+      <div class="container">
+        <div class="card">
+          <h3>الفجر</h3>
+          <p class="time Fajr"></p>
+        </div>
+        <div class="card">
+          <h3>شروق الشمس</h3>
+          <p class="time Sunrise"></p>
+        </div>
+        <div class="card">
+          <h3>الظهر</h3>
+          <p class="time Dhuhr"></p>
+        </div>
+        <div class="card">
+          <h3>العصر</h3>
+          <p class="time Asr"></p>
+        </div>
+        <div class="card">
+          <h3>المغرب</h3>
+          <p class="time Maghrib"></p>
+        </div>
+        <div class="card">
+          <h3>العشاء</h3>
+          <p class="time Isha"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="contact">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#43a047" fill-opacity="1"
+        d="M0,256L48,240C96,224,192,192,288,165.3C384,139,480,117,576,138.7C672,160,768,224,864,224C960,224,1056,160,1152,128C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+      </path>
+    </svg>
+    <ul class="links">
+      <li><i class="ri-facebook-line"></i></li>
+      <li><i class="ri-instagram-line"></i></li>
+      <li><i class="ri-twitter-line"></i></li>
+      <li><i class="ri-whatsapp-line"></i></li>
+    </ul>
+  </footer>
+   <!-- ربط ملف JavaScript للتحكم في تفاعلات الصفحة -->
+  <script src="main.js"></script>
+</body>
+
+</html>
